@@ -1,53 +1,431 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Soy Frank Perez De la Cruz</title>
-    <link rel="Stylesheet" href="estilos.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Frank | Systems Engineer &amp; Developer</title>
+  <meta name="description"
+    content="Portafolio de Frank, Ingeniero de Sistemas apasionado por la tecnología, análisis de datos y desarrollo web." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Share+Tech+Mono&family=Exo+2:wght@300;400;600&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="css/index.css" />
 </head>
+
 <body>
-    <div>
-    <h1 class="center">FRANK PEREZ DE LA CRUZ</h1>
+
+  <div class="scanline-overlay"></div>
+  <canvas id="matrix-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav id="navbar">
+    <div class="nav-logo">
+      <span class="logo-bracket">[</span>
+      <span class="logo-text glitch-logo" data-text="FRANK">FRANK P.</span>
+      <span class="logo-bracket">]</span>
     </div>
-    <p1>Hola mi me llamo es Frank Perez De la Cruz soy un joven de 25 años, vivo en Peru, Lima en el distrito de Pachacamac.
-        Actualmente estudio Ingenieria de Sistemas de Informacion en la Universidad <a class="ref" href="https://www.usil.edu.pe/">San Ignacion de Loyola</a>,
-        voy en tercer ciclo y me encanta mi carrera. Mi familia esta compuesta por mi padre Eder y mi madre Grimalda, 
-        y mi hermana Karen; somos muy unidos todos y me gusta mi familia pasos bueno momentos con ella. A continuacion mencionare algunas 
-        datos de mi vida personal e intereses que les ayudara a conocerme mejor.</p1>
-    <h2>Pasatiempo Favoritos</h2>
-    <p2>En mi tiempo libre me gusta jugar videojuegos con mis amigos y primos, me gusta escuhar musica electronica, 
-        ademas me gusta ver series de plataformas como <a class="ref" href="https://www.netflix.com/pe/"> Netflix</a>,
-        <a class="ref" href="https://www.disneyplus.com/">Disneyplus</a> y animes tambien. Tambien me gusta salir y conocer 
-        lugares nuevos con mis mejores amigos en busca de aventuras y pasarlo bien.</p2>
-    <h3>Juegos y Series Favoritas</h3>
-    <ul>
-        <li> <a class="ref" href="https://www.dota2.com/"> Dota 2</a></li> 
-		<img class="imagen99" src="https://cdn.cloudflare.steamstatic.com/apps/dota2/images/dota2_social.jpg">
-		<li> <a class="ref" href="https://blog.counter-strike.net/"> CSGO</a></li>
-		<img class="imagen99" src="https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/styles/1200/public/media/image/2012/08/184043-counter-strike-global-offensive-analizado.jpg?itok=ce8nkvDU">
-		<li> <a class="ref" href="https://www.callofduty.com/">Call of Duty</a></li>
-		<img class="imagen99" src="https://i.blogs.es/b2ec36/warzone/450_1000.jpeg">
-		<li> La Casa De Papel</li>
-		<img class="imagen99" src="https://cdn.culturagenial.com/es/imagenes/casa-papel-cartel-cke.jpg">
-		<li> Rick and Morty</li>
-		<img class="imagen99" src="https://sm.ign.com/t/ign_es/tv/r/rick-morty/rick-morty_xs5d.200.jpg">
-		<li> The Umbrella Academy</li>
-		<img class="imagen99" src="https://media.revistagq.com/photos/5ca5dfe6267a32750072094a/master/w_1200,c_limit/the_umbrella_academy_personajes_4123.jpg">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#hero" class="nav-link active" id="nav-home">_inicio</a></li>
+      <li><a href="#about" class="nav-link" id="nav-about">_sobre_mi</a></li>
+      <li><a href="#skills" class="nav-link" id="nav-skills">_skills</a></li>
+      <li><a href="#projects" class="nav-link" id="nav-projects">_proyectos</a></li>
+      <li><a href="#contact" class="nav-link" id="nav-contact">_contacto</a></li>
     </ul>
-    <h4>Resumen</h4>
-    <ul>
-        <li class="li9">Tengo 21 años</li>
-        <li class="li9">Estudio Ingenieria de Sistemas e Informatica</li>
-        <li class="li9">Soy de Peru y vivo Lima</li>
-        <li class="li9">Estudio en la Universidad <a class="ref" href="https://www.usil.edu.pe/">USIL</a></li>
-        <li class="li9">Me gusta jugar videojuegos y ver peliculas</li>
-        <li class="li9">Me gusta escuchar musica electronica <a class="ref" href="https://www.tomorrowland.com/">Tomorrowland</a></li>
-    </ul>
-    <h5>Mis Redes Sociales</h5>
-    <a href="https://www.facebook.com/profile.php?id=100014511737298"> <img class="img1" src="https://cdn.icon-icons.com/icons2/2429/PNG/512/facebook_logo_icon_147291.png" alt="Facebook"></a>
-    <a href="https://www.instagram.com/fanez_10/"> <img class="img1" src="https://i.pinimg.com/originals/3b/21/c7/3b21c7efd2ba9c119fb8d361acacc31d.png" alt="Instagram"> </a>
-    <a href="https://twitter.com/Frank51463926"> <img class="img1" src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-logotipo-del-icono-de-twitter-by-vexels.png" alt="Twitter"> </a>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-content">
+      <p class="hero-greeting">// Hola, mundo! Soy</p>
+      <h1 class="hero-name glitch" data-text="FRANK">FRANK</h1>
+      <div class="hero-subtitle">
+        <span class="typing-prefix">&gt;&gt;&gt; </span>
+        <span id="typing-text" class="typing-text"></span>
+        <span class="cursor-blink">█</span>
+      </div>
+      <p class="hero-description">Ingeniero de Sistemas · Entusiasta de la Tecnología · Analista de Datos</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary" id="hero-btn-projects">
+          <span>Ver Proyectos</span>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <polyline points="13 17 18 12 13 7" />
+            <polyline points="6 17 11 12 6 7" />
+          </svg>
+        </a>
+        <a href="#contact" class="btn btn-secondary" id="hero-btn-contact"><span>Contáctame</span></a>
+      </div>
+      <div class="hero-social">
+        <a href="https://github.com" target="_blank" rel="noopener" class="social-link" id="hero-github"
+          aria-label="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" id="hero-linkedin"
+          aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <a href="mailto:frank@email.com" class="social-link" id="hero-email" aria-label="Email">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="avatar-container">
+        <div class="avatar-ring"></div>
+        <div class="avatar-ring ring-2"></div>
+        <img src="assets/avatar2.png" alt="Frank - Systems Engineer" class="avatar-img" id="hero-avatar" />
+        <div class="avatar-hud avatar-hud-tl">SYS_ENG</div>
+        <div class="avatar-hud avatar-hud-tr">v2026</div>
+        <div class="avatar-hud avatar-hud-bl">ONLINE</div>
+        <div class="avatar-hud avatar-hud-br">█░░</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>SCROLL</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="section">
+    <div class="section-header">
+      <span class="section-tag">// 01</span>
+      <h2 class="section-title">SOBRE_MI<span class="neon-dot">.</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p class="about-intro"><span class="neon-bracket">&lt;</span> Egresado de <span class="highlight">Ingeniería de
+            Sistemas</span>, me apasiona la tecnología y el aprendizaje constante,
+          siempre en búsqueda de nuevos conocimientos que me permitan crecer tanto a nivel profesional como personal.
+          Disfruto enfrentar desafíos y aportar en la creación de soluciones que generen valor real. <span
+            class="neon-bracket">/&gt;</span></p>
+        <p class="about-body">Me especializo en <span class="highlight">análisis de datos</span> y desarrollo de
+          aplicaciones. Disfruto explorar tecnologías emergentes, resolver problemas complejos y aprender continuamente
+          en un campo en constante evolución.</p>
+        <div class="about-stats">
+          <div class="stat-card"><span class="stat-icon">🎓</span><span class="stat-value">2026</span><span
+              class="stat-label">Graduado</span></div>
+          <div class="stat-card"><span class="stat-icon">💻</span><span class="stat-value">9+</span><span
+              class="stat-label">Tecnologías</span></div>
+          <div class="stat-card"><span class="stat-icon">📊</span><span class="stat-value">Data</span><span
+              class="stat-label">Especialización</span></div>
+          <div class="stat-card"><span class="stat-icon">🚀</span><span class="stat-value">∞</span><span
+              class="stat-label">Curiosidad</span></div>
+        </div>
+        <div class="about-tags">
+          <span class="tag">Análisis de Datos</span>
+          <span class="tag">Desarrollo Web</span>
+          <span class="tag">Bases de Datos</span>
+          <span class="tag">Visualización</span>
+          <span class="tag">Aprendizaje Continuo</span>
+        </div>
+      </div>
+      <div class="about-terminal reveal">
+        <div class="terminal-header">
+          <span class="terminal-dot red"></span>
+          <span class="terminal-dot yellow"></span>
+          <span class="terminal-dot green"></span>
+          <span class="terminal-title">frank@sys:~$</span>
+        </div>
+        <div class="terminal-body">
+          <p class="term-line"><span class="t-prompt">$</span> <span class="t-cmd">cat perfil.json</span></p>
+          <p class="term-line t-output">{</p>
+          <p class="term-line t-output">&nbsp;&nbsp;"nombre": <span class="t-string">"Frank"</span>,</p>
+          <p class="term-line t-output">&nbsp;&nbsp;"rol": <span class="t-string">"Systems Engineer"</span>,</p>
+          <p class="term-line t-output">&nbsp;&nbsp;"grado": <span class="t-string">"Ing. de Sistemas"</span>,</p>
+          <p class="term-line t-output">&nbsp;&nbsp;"especializacion": <span class="t-string">"Data Analytics"</span>,
+          </p>
+          <p class="term-line t-output">&nbsp;&nbsp;"idiomas": [<span class="t-string">"Español"</span>, <span
+              class="t-string">"Inglés"</span>],</p>
+          <p class="term-line t-output">&nbsp;&nbsp;"disponible": <span class="t-bool">true</span></p>
+          <p class="term-line t-output">}</p>
+          <p class="term-line"><span class="t-prompt">$</span> <span class="t-cmd">status --online</span></p>
+          <p class="term-line t-success">► ONLINE — LISTO PARA NUEVOS RETOS</p>
+          <p class="term-line"><span class="t-prompt">$</span> <span class="cursor-blink">█</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="section section-dark">
+    <div class="section-header">
+      <span class="section-tag">// 02</span>
+      <h2 class="section-title">SKILLS<span class="neon-dot">.</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <p class="skills-subtitle">Stack tecnológico que domino</p>
+    <div class="skills-grid">
+      <div class="skill-card reveal" id="skill-python">
+        <div class="skill-icon-wrap"><i class="devicon-python-plain colored"></i></div>
+        <span class="skill-name">Python</span>
+      </div>
+      <div class="skill-card reveal" id="skill-html">
+        <div class="skill-icon-wrap"><i class="devicon-html5-plain colored"></i></div>
+        <span class="skill-name">HTML5</span>
+      </div>
+      <div class="skill-card reveal" id="skill-css">
+        <div class="skill-icon-wrap"><i class="devicon-css3-plain colored"></i></div>
+        <span class="skill-name">CSS3</span>
+      </div>
+      <div class="skill-card reveal" id="skill-js">
+        <div class="skill-icon-wrap"><i class="devicon-javascript-plain colored"></i></div>
+        <span class="skill-name">JavaScript</span>
+      </div>
+      <div class="skill-card reveal" id="skill-sql">
+        <div class="skill-icon-wrap"><i class="devicon-mysql-plain colored"></i></div>
+        <span class="skill-name">SQL</span>
+      </div>
+      <div class="skill-card reveal" id="skill-java">
+        <div class="skill-icon-wrap"><i class="devicon-java-plain colored"></i></div>
+        <span class="skill-name">Java</span>
+      </div>
+      <div class="skill-card reveal" id="skill-powerbi">
+        <div class="skill-icon-wrap powerbi-icon">
+          <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="18" width="6" height="10" rx="1" fill="#F2C811" />
+            <rect x="10" y="12" width="6" height="16" rx="1" fill="#F2C811" opacity="0.85" />
+            <rect x="18" y="4" width="6" height="24" rx="1" fill="#F2C811" opacity="0.7" />
+            <rect x="26" y="8" width="4" height="20" rx="1" fill="#F2C811" opacity="0.5" />
+          </svg>
+        </div>
+        <span class="skill-name">Power BI</span>
+      </div>
+      <div class="skill-card reveal" id="skill-bash">
+        <div class="skill-icon-wrap"><i class="devicon-bash-plain colored"></i></div>
+        <span class="skill-name">Bash</span>
+      </div>
+      <div class="skill-card reveal" id="skill-git">
+        <div class="skill-icon-wrap"><i class="devicon-git-plain colored"></i></div>
+        <span class="skill-name">Git</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- CV DOWNLOAD -->
+  <section id="cv" class="section cv-section">
+    <div class="cv-content reveal">
+      <div class="cv-text">
+        <span class="section-tag cv-tag">// CURRICULUM</span>
+        <h2 class="cv-title">¿Quieres saber más<span class="neon-dot">?</span></h2>
+        <p class="cv-desc">Descarga mi CV y conoce mi experiencia, formación y proyectos en detalle.</p>
+      </div>
+      <a href="assets/cv_frank_perez.pdf" download="CV_Frank_Perez.pdf" class="btn btn-cv" id="btn-download-cv">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="20" height="20">
+          <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+          <polyline points="7 10 12 15 17 10" />
+          <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span>Descargar CV</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="section">
+    <div class="section-header">
+      <span class="section-tag">// 03</span>
+      <h2 class="section-title">PROYECTOS<span class="neon-dot">.</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <p class="skills-subtitle">Algunos de mis trabajos destacados</p>
+    <div class="projects-grid">
+      <article class="project-card reveal" id="proj-1">
+        <div class="project-img-wrap">
+          <img src="assets/projects/project1.png" alt="DataViz Dashboard" class="project-img" />
+          <div class="project-overlay"><span class="overlay-text">Ver Proyecto</span></div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">DataViz Dashboard</h3>
+          <p class="project-desc">Panel interactivo de análisis de datos con visualizaciones en tiempo real, filtros
+            dinámicos y exportación de reportes.</p>
+          <div class="project-stack">
+            <span class="stack-badge">Python</span><span class="stack-badge">Pandas</span><span
+              class="stack-badge">Power BI</span><span class="stack-badge">SQL</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link" id="proj1-code">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              Código
+            </a>
+            <a href="#" class="proj-link proj-link-live" id="proj1-live">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Demo
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card reveal" id="proj-2">
+        <div class="project-img-wrap">
+          <img src="assets/projects/project2.png" alt="CyberApp Web" class="project-img" />
+          <div class="project-overlay"><span class="overlay-text">Ver Proyecto</span></div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">CyberApp Web</h3>
+          <p class="project-desc">Aplicación web full-stack con autenticación, CRUD completo, diseño responsive y
+            consumo de APIs RESTful.</p>
+          <div class="project-stack">
+            <span class="stack-badge">HTML</span><span class="stack-badge">CSS</span><span
+              class="stack-badge">JavaScript</span><span class="stack-badge">Java</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link" id="proj2-code">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              Código
+            </a>
+            <a href="#" class="proj-link proj-link-live" id="proj2-live">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Demo
+            </a>
+          </div>
+        </div>
+      </article>
+      <article class="project-card reveal" id="proj-3">
+        <div class="project-img-wrap">
+          <img src="assets/projects/project3.png" alt="QueryMaster DB" class="project-img" />
+          <div class="project-overlay"><span class="overlay-text">Ver Proyecto</span></div>
+        </div>
+        <div class="project-body">
+          <h3 class="project-title">QueryMaster DB</h3>
+          <p class="project-desc">Sistema de gestión de base de datos con queries optimizados, triggers, procedimientos
+            almacenados y reportes automatizados.</p>
+          <div class="project-stack">
+            <span class="stack-badge">SQL</span><span class="stack-badge">MySQL</span><span
+              class="stack-badge">Python</span><span class="stack-badge">Bash</span>
+          </div>
+          <div class="project-links">
+            <a href="#" class="proj-link" id="proj3-code">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg>
+              Código
+            </a>
+            <a href="#" class="proj-link proj-link-live" id="proj3-live">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="16" height="16">
+                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+                <polyline points="15 3 21 3 21 9" />
+                <line x1="10" y1="14" x2="21" y2="3" />
+              </svg>
+              Demo
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="section section-dark">
+    <div class="section-header">
+      <span class="section-tag">// 04</span>
+      <h2 class="section-title">CONTACTO<span class="neon-dot">.</span></h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <p class="contact-intro">¿Tienes un proyecto en mente o quieres colaborar? <span
+            class="highlight">Hablemos.</span></p>
+        <div class="contact-links">
+          <a href="mailto:frank@email.com" class="contact-item" id="contact-email">
+            <div class="contact-icon-wrap"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                <polyline points="22,6 12,13 2,6" />
+              </svg></div>
+            <div><span class="contact-label">Email</span><span class="contact-value">frank@email.com</span></div>
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener" class="contact-item" id="contact-github">
+            <div class="contact-icon-wrap"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+              </svg></div>
+            <div><span class="contact-label">GitHub</span><span class="contact-value">github.com/frank</span></div>
+          </a>
+          <a href="https://linkedin.com" target="_blank" rel="noopener" class="contact-item" id="contact-linkedin">
+            <div class="contact-icon-wrap"><svg viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+              </svg></div>
+            <div><span class="contact-label">LinkedIn</span><span class="contact-value">linkedin.com/in/frank</span>
+            </div>
+          </a>
+        </div>
+      </div>
+      <form class="contact-form reveal" id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="contact-name">Nombre</label>
+          <input type="text" id="contact-name" name="name" placeholder="Tu nombre" autocomplete="off" />
+        </div>
+        <div class="form-group">
+          <label for="contact-email-input">Email</label>
+          <input type="email" id="contact-email-input" name="email" placeholder="tu@email.com" autocomplete="off" />
+        </div>
+        <div class="form-group">
+          <label for="contact-message">Mensaje</label>
+          <textarea id="contact-message" name="message" rows="5" placeholder="Cuéntame tu proyecto..."></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full" id="form-submit">
+          <span>Enviar Mensaje</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="18" height="18">
+            <line x1="22" y1="2" x2="11" y2="13" />
+            <polygon points="22 2 15 22 11 13 2 9 22 2" />
+          </svg>
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-bracket">[</span>
+        <span class="glitch-logo" data-text="FRANK">FRANK</span>
+        <span class="logo-bracket">]</span>
+      </div>
+      <p class="footer-copy"><span class="t-prompt">&lt;/&gt;</span> Diseñado y desarrollado por <span
+          class="highlight">Frank</span> · 2026</p>
+      <div class="footer-links">
+        <a href="#hero" class="footer-link">Inicio</a>
+        <a href="#about" class="footer-link">Sobre mí</a>
+        <a href="#skills" class="footer-link">Skills</a>
+        <a href="#projects" class="footer-link">Proyectos</a>
+        <a href="#contact" class="footer-link">Contacto</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
 </body>
+
 </html>
